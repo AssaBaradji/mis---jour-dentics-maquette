@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/Logo.png" alt="logo du site">
+            </div>
+            <ul class="menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="index.html">Appointment</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="login.html"><button>Login</button></a></li> 
+            </ul>
+        </nav>  
+        <!-- menu responsive -->
+        <div class="toggle_menu"></div>
+    </header>
+    <section id="signup-page">
+        <div class="left">
+            <h1>LOGIN WITH EMAIL</h1>
+        </div>
+        <div class="sign-up-right">
+            <form action="#">
+                <div class="form-head">
+                    <div class="midle">
+                        <label for="usermail">Email</label>
+                        <input type="text" name="usermail" id="usermail" placeholder="Email" required>
+                        <label for="userpassword">Password</label>
+                        <input type="text" name="userpassword" id="userpassword" placeholder="Password" required>
+                    </div>
+                        <div class="login-checkbox">  
+                            <input type="checkbox" required>
+                            <label for="checkbox"><span>Keep  me logged in.</span></label>  
+                            <a href="">forgot your password</a>                   
+                        </div>
+                    <div class="login-btn">
+                        <button type="submit">Log In</button>
+                    </div>
+                    <div class="separator"></div> 
+                    <div class="bottom-form">   
+                        <p>Don’t have an account?</p>
+                        <p class="lien"><a href="sign-up.html">Sign Up here</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="copyright">
+            <p>© 2001-2022, All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+        var small_menu = document.querySelector('.toggle_menu')
+        var menu = document.querySelector('.menu')
+        small_menu.onclick = function(){
+             small_menu.classList.toggle('active');
+             menu.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>

@@ -129,7 +129,7 @@ width: 50%;
     border: none; 
     border-radius: 5px;  
     font-size: 15px; 
-    padding: 6px 15px; 
+    padding: 10px 15px; 
     cursor: pointer;
     margin-top: 20px;
 }
@@ -256,44 +256,34 @@ width: 100%;
     margin-left: 5px;
     
 }
-
 .second-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    justify-content: space-around;
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(2,200px);
+    gap: 80px;  
+    margin: 50px;  
 }
 .second-section .sous-section {
-    height: 23%;
-    width: 23%;
+    height: 90%;
+    width: 80%;
     background-color: var(--whiteBG);
-    padding: 3%;
+    padding: 30px 30px 30px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 6px;
-    margin-bottom: 35px;
-}
-.second-section .sous-section img {
-    width: 7vw;
-    height: 7vw;
-    margin-bottom: 15px;
-}
-.second-section .sous-section h5 {
-    text-align: center;
-    font-size: 2vw;
-    margin-bottom: 15px;
-
+    border-radius: 8px;
+    gap: 15px;
 }
 .second-section .sous-section p{
     text-align: center;
-    font-size: 1.5vw;
-    line-height: 1.4;
+    font-size: 16px;
     
 }
-
+.second-section .sous-section h5 {
+    text-align: center;
+    font-size: 18px;
+}
 .separation{
     width: 100%;
     display: flex;
@@ -356,7 +346,7 @@ width: 100%;
 #historic .contenair .third-left img{
     display: flex;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 .historic-content{
     display: flex;
@@ -445,13 +435,12 @@ width: 100%;
     align-items: center;
 }
 .registre .doctor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    text-align: center;
     width: 90%;
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .registre .doctor img{
     width: 80%;
@@ -476,6 +465,7 @@ width: 100%;
     color: #777777;
     text-align: center;
     font-size: 16px;
+    width: 80%;
 }
 .registre .doctor .button{
     background-color: transparent;
@@ -675,100 +665,90 @@ form .all-button .submit{
 #blue-end{ 
     background-color: var(--primary);
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 #blue-end .pied-page{
     display: flex;
+    width: 90%;
     justify-content: center;
-    align-items: center;
-    width: 80%; 
-    padding: 50px 0;
-
-}
-#connet{
-    display: flex;
-}
-.order1{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.order2{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.order2 .blue-end-item .social-network a{
-    color: var(--whiteBG);
-    font-size: 16px;
-}
-.order1 .blue-end-item :nth-child(1){
-    font-size: 16px;
-    margin-right: 50px;
-}
-.order1 :nth-child(1){
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-.order1 :nth-child(3){
-    font-size: 16px;
-   width: 80%;
-}
-.social-network {
-    width: 50%;
-    padding: 0;
-}
-.order1 .blue-end-item :nth-child(2){
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-    
-.order2 .blue-end-item .social-network {
-    display: flex;
     gap: 30px;
-    
+    color: var(--white);
+    margin: 30px;
 }
-.blue-end-item {
-    width: 100%;
-    display: flex;
+#blue-end .pied-page .first-level{
+    width: 20%;
     flex-direction: column;
-    color: var(--whiteBG);
-    height: 200px;
-    padding: 20px ;
-
+    margin: 10px;
+    line-height: 1.5;
 }
-
-.order1 .border-left{
-    border-right: 1px solid var(--whiteBG);
-}
-.order2 .border-left{
-    border-right: 1px solid var(--whiteBG);
-}
-.blue-end-item p{
-    line-height: 2;
-}
-#blue-end .pied-page .blue-end-item img{
+#blue-end .pied-page .first-level img{
     color: #ffffff;
     filter: invert(100%);
     filter: brightness(100);
-    width: 100px;
-    margin: 10px 0;
-     }
-footer{
-    display: flex;
+}
+#blue-end .pied-page .second-level{
+    width: 20%;
     text-align: center;
-    background-color: #216583;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    line-height: 1.5;
+   
+}
+#blue-end .pied-page .second-level h5{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.pied-page .third-level .fifth-left a{
+    text-decoration: none;
     color: #ffffff;
-    width:100%;
-    height: 50px;
+    
     
 }
+.pied-page .third-level .fifth-right a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    
+}
+#blue-end .pied-page .third-level{
+    width: 20%;
+    margin: 10px;   
+}
+#blue-end .pied-page .third-level .link-title{
+    font-weight: bold;
+    
+}
+.pied-page .third-level .social-network {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+    }
+    .pied-page .third-level .social-network .fifth-right{
+        gap: 30px;
+        width: 30%;
+    }
+    #blue-end .pied-page .fourth-level{
+        width: 20%;
+        flex-direction: column;
+        margin: 10px;
+        line-height: 1.5;
+    }
+    footer{
+        display: flex;
+        text-align: center;
+        background-color: #213b57;
+        justify-content: center;
+        color: #ffffff;
+        width:100%;
+        height: 48px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 /* ::::::Sign-up::::: */
 #signup-page{
     display: flex;
@@ -1050,6 +1030,10 @@ header .menu.responsive li {
 .blue .right-blue .icon img {
     width: 8vw;
 }
+#services{
+    display: flex;
+    flex-direction: column;
+}
 #services .first-section {
     display: flex;
     flex-direction: column;
@@ -1088,13 +1072,15 @@ header .menu.responsive li {
 .separation .separe .separ h1 {
     font-size: 6vw;
 }
-.second-section .sous-section {
-    width: 20%;
+.second-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 .second-section .sous-section img {
-    width: 10vw;
-    height: 10vw;
-} 
+    width: 30%;
+}
+
 .historic-content .contenair {
     display: flex;
     flex-direction: column;
@@ -1110,20 +1096,27 @@ header .menu.responsive li {
     font-size:14px;
     text-align: justify;
 }
-.registre .doctor{
-    flex-wrap: wrap;
-}
-.registre .doctor .doctor-profil{
+.registre {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 3vw;
-    padding: 15px;
-    width: 30vw;
-    border: 1px solid var(--silver);
-    border-radius: 8px;
-    margin-bottom: 20px;
+    width: 100%;
+}
+.registre .doctor{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.registre .doctor .doctor-profil{
+    width: 70%;
+    height: 80%;
+    
+}
+.registre .doctor .doctor-profil p{
+    font-size: 18px;
+    width: 80%;
 }
 .formulaire {
     display: flex;
@@ -1161,6 +1154,36 @@ form .corps-formulaire .droite {
 .formulaire .right form textarea{
     width: 83%;
 }
+#blue-end{ 
+    display: flex;
+    flex-direction: column;
+}
+#blue-end .pied-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+    #blue-end .pied-page .first-level{
+        width: 60%;
+        
+    }
+    #blue-end .pied-page hr{
+        width: 80%;
+        display: flex;
+        
+    }
+    #blue-end .pied-page .second-level{
+        width: 60%;  
+    }
+    #blue-end .pied-page .third-level{
+        width: 60%;   
+    }
+    #blue-end .pied-page .fourth-level{
+        width: 50%;
+       
+    }
 #subcribe{
     padding: 20px;
 }
@@ -1209,23 +1232,6 @@ form .all-button .submit{
     cursor: pointer;
 }
 
-.pied-page{
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#blue-end .pied-page .order1, .order2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-}
-#blue-end{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #signup-page {
     display: flex;
     flex-direction: column;
@@ -1235,30 +1241,6 @@ form .all-button .submit{
 }
 #signup-page .left{
     margin-top: 30px;
-}
-#blue-end .pied-page{
-    width: 100%;
-}
-.order1 .border-lef{
-    width: 100%;
-}
-#blue-end .pied-page .order1 {
-    width: 100%;
-    margin: 20px auto;
-}
-#blue-end .pied-page .order2{
-    width: 100%;
-    margin: 20px auto;   
-}
-.order2 .blue-end-item .social-network{
-    display: flex;
-    
-}
-.blue-end-item{
-    width: 100%;
-}
-.border-left{
-    border-left: none;
 }
 
 }
@@ -1274,7 +1256,6 @@ form .all-button .submit{
     .registre .doctor .button{
         width: 60%;
         font-size: 10px;
-        /* padding: 20px 30px; */
     }
     }
 
